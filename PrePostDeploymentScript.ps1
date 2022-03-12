@@ -136,7 +136,7 @@ function Get-SortedLinkedServices {
 
 $templateJson = Get-Content $armTemplate | ConvertFrom-Json
 $resources = $templateJson.resources
-
+exit
 
 #Triggers 
 Write-Host "Getting triggers"
