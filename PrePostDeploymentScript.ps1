@@ -134,11 +134,10 @@ function Get-SortedLinkedServices {
     $SortedList
 }
 
-Write-Host "Getting Template ..."
+
 $templateJson = Get-Content $armTemplate | ConvertFrom-Json
 $resources = $templateJson.resources
-exit
-Write-Host "Exited ... ?"
+
 
 #Triggers 
 Write-Host "Getting triggers"
